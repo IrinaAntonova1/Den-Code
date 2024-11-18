@@ -1,0 +1,166 @@
+/* Сброс стандартных стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Основной стиль */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f5f0; /* Светлый бежевый фон */
+  color: #333; /* Темный текст для контраста */
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+/* Заголовки */
+h1,
+h2,
+h3,
+h4 {
+  color: #4f4f4f; /* Тёмно-серый для заголовков */
+  margin-bottom: 20px;
+}
+/* Стиль для заголовка главной страницы */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  color: #f0a500; /* Теплый оранжевый */
+}
+/* Подзаголовок */
+h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  color: #f0a500;
+}
+/* Блоки с контентом */
+.section {
+  padding: 40px 20px;
+  margin: 40px 0;
+}
+.section:nth-child(even) {
+  background-color: #fffae6; /* Теплый светлый фон для чередующихся блоков */
+}
+.section p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Блоки с списками */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+/* Кнопки */
+.button {
+  background-color: #f0a500; /* Теплый оранжевый */
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #e08c00; /* Более тёмный оттенок оранжевого */
+}
+/* Форма */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+input,
+textarea {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+textarea {
+  height: 150px;
+}
+input[type="submit"] {
+  background-color: #f0a500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: #e08c00;
+}
+/* Отзывы */
+.testimonials {
+  background-color: #fffae6;
+  padding: 40px 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+.testimonials h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.testimonial-item {
+  margin-bottom: 20px;
+}
+.testimonial-item p {
+  font-style: italic;
+  color: #555;
+}
+.testimonial-item span {
+  font-weight: bold;
+  color: #f0a500;
+}
+/* Контакты */
+.contact-info {
+  text-align: center;
+  margin-top: 40px;
+}
+.contact-info p {
+  font-size: 1.1rem;
+  color: #555;
+}
+/* Мобильная версия */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .section {
+    padding: 20px;
+  }
+  .button {
+    padding: 10px 25px;
+  }
+  input,
+  textarea {
+    max-width: 100%;
+  }
+
+  .testimonials h3 {
+    font-size: 1.5rem;
+  }
+  .contact-info p {
+    font-size: 1rem;
+  }
+}
